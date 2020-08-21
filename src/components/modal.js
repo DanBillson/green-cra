@@ -25,7 +25,8 @@ const Modal = () => {
     }
 
     setEmail(storedEmail)
-  }, [])
+    // eslint-disable-next-line
+  }, [storedEmail, setStoredEmail])
 
   const handleClick = () => {
     if (!emailRegex.test(email)) {
