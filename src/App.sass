@@ -1,0 +1,114 @@
+.App 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eee;
+
+.modal
+  padding: 2rem 1.5rem;
+  width: 90%;
+  max-width: 600px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-sizing: border-box;
+  border-radius: 2px;
+  letter-spacing: -0.5px;
+
+  h1
+    color: #4c494b;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+
+  h4
+    color: #b2afb1;
+    font-weight: 300;
+    margin: 0 0 3rem;
+
+.inputContainer
+  display: flex;
+  flex-direction: column;
+
+  label
+    color: #777;
+    font-weight: 300;
+
+  input
+    padding: 0.85rem;
+    margin: 0.25rem 0 1rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    font-family: inherit;
+
+.checkboxContainer
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  input[type="checkbox"]
+    display: none;
+
+  span
+    padding: 4px;
+    margin-right: 0.75rem;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #b2afb1;
+    border-radius: 3px;
+    transition: 0.23s ease-in-out;
+
+    svg
+      display: block;
+      opacity: 0;
+      transition: 0.23s ease-in-out;
+      color: #fff;
+
+    &.checked
+      background-color: #37a9e0;
+      border: 1px solid #37a9e0;
+
+      svg
+        opacity: 1;
+
+  label
+    color: #777
+    font-size: 0.9rem;
+  
+.logo
+  width: 150px;
+
+.message
+  display: block;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  font-size: 0.75rem;
+  color: #fff;
+  border-radius: 6px;
+
+.error
+  background-color: #e67f25;
+  margin-bottom: 0.25rem;
+
+.success
+  background-color: #30af5f;
+  margin-top: 1.5rem;
+
+button
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #777;
+  font-size: 1.1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.23s ease-in-out;
+
+  &:hover
+    background-color: #30af5f;
+    color: #fff;
+
+@media screen and (min-width: 678px)
+  .modal
+    padding: 4rem 3.5rem;
