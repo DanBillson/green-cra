@@ -25,7 +25,7 @@ const Modal = () => {
     }
 
     setEmail(storedEmail)
-  }, [remember, storedEmail, setStoredEmail, setEmail])
+  }, [])
 
   const handleClick = () => {
     if (!emailRegex.test(email)) {
